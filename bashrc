@@ -8,15 +8,19 @@
 alias ls='ls --color=auto'
 
 #My aliases
-alias inst='sudo pacman -S'
-alias insta='sudo yaourt -S'
-alias updt='sudo pacman -Syu'
+alias inst='sudo apt install'
+alias updt='sudo apt update && sudo apt upgrade'
 alias gcm='git commit -m'
 alias ..='cd ..'
 alias grep='grep --color=auto'
 alias rm='rm -I --preserve-root'
 alias procexp='ps auxf | sort -nr -k 3 | head -10'
-alias desk='startxfce4'
+
+function gitall {
+	git add .
+	git commit -m $1
+	git push
+}
 
 #default ps1
 #PS1='[\u@\h \W]\$ '
