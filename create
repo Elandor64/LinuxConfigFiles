@@ -1,0 +1,17 @@
+#!/bin/bash
+
+mkdir $1
+cd $1
+mkdir src
+mkdir out
+cd out
+mkdir production
+mkdir debug
+cd ..
+cd src
+touch $1.c
+echo "#!/bin/bash" >> build
+echo "gcc $1.c -o ../out/production/$1" >> build
+echo "../out/production/$1" >> build
+chmod +x build
+vim $1.c
