@@ -12,7 +12,7 @@ echo -e "Configuration: \e[32mSuccess\e[39m"
 echo ""
 echo -e "\e[96mInstalling essential Programs\e[39m"
 while read F  ; do
-        sudo apt install $F
+        sudo pacman -S $F
 done <./essential_programs
 echo -e "Program Installation: \e[32mSuccess\e[39m"
 
