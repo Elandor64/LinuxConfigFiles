@@ -4,10 +4,10 @@ echo Start config process...
 #config
 echo ""
 echo -e "\e[96mBeginning Configuration Setup\e[39m"
-mv ../Generic/.bashrc ~/.bashrc
-mv ../Generic/.nanorc ~/.nanorc
-mv ../Generic/.vimrc ~/.vimrc
-mv ../Generic/.zshrc ~/.zshrc
+cp ../Generic/.bashrc ~/.bashrc
+cp ../Generic/.nanorc ~/.nanorc
+cp ../Generic/.vimrc ~/.vimrc
+cp ../Generic/.zshrc ~/.zshrc
 echo -e "Configuration: \e[32mSuccess\e[39m"
 
 #update
@@ -34,7 +34,7 @@ echo ""
 echo -e "\e[96mConfiguring VIM\e[39m"
 mkdir ~/.vim_runtime
 mkdir ~/.vim_runtime/vimrcs
-mv ../vim/* ~/.vim_runtime/vimrcs/
+cp ../vim/* ~/.vim_runtime/vimrcs/
 echo -e "VIM Configuration: \e[32mSuccess\e[39m"
 
 #Code
