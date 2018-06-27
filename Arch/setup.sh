@@ -11,21 +11,24 @@ mv ../Generic/.zshrc ~/.zshrc
 echo -e "Configuration: \e[32mSuccess\e[39m"
 
 #update
-sudo apt update
+pacman -Syu
+#yaourt
+sudo echo "[archlinuxfr]\nSigLevel = Never\nServer = http://repo.archlinux.fr/$arch" >> /etc/pacman.conf
+sudo pacman -Sy yaourt
 
 #programs
 echo ""
 echo -e "\e[96mInstalling essential generic Programs\e[39m"
 while read F  ; do
-        sudo apt install -S $F
+        sudo pacman -S $F
 done <../Generic/essential_programs
 echo -e "Program Installation: \e[32mSuccess\e[39m"
 
 #arch specific
 echo ""
-echo -e "\e[96mInstalling debian-like specific Programs\e[39m"
+echo -e "\e[96mInstalling arch specific Programs\e[39m"
 while read F  ; do
-        sudo apt install -S $F
+        sudo pacman -S $F
 done <./specific_programs
 echo -e "Program Installation: \e[32mSuccess\e[39m"
 
