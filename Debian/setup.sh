@@ -51,5 +51,8 @@ echo -e "Code: \e[32mSuccess\e[39m"
 #rm -rf LinuxConfigFiles
 #echo -e "Cleanup: \e[32mSuccess\e[39m"
 
+
+chsh -s $(which zsh)
+
 echo ""
 echo Success! Consider running the GithubManager next!
