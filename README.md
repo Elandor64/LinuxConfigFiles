@@ -1,5 +1,8 @@
 # LinuxConfigFiles
 
+## thanks to...
+- https://github.com/amix/vimrc for the awesome vim config files
+
 Standard configuration files for easier Linux setup.
 
 Currently supporting:
