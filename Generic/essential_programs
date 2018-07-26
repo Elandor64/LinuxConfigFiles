@@ -1,4 +1,4 @@
-htop
+﻿htop
 screenfetch
 tmux
 nano
@@ -19,3 +19,5 @@ texlive-full
 zsh
 firefox
 gimp
+inkscape
+deepin-terminal

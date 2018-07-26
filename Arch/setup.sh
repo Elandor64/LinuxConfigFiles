@@ -11,7 +11,7 @@ cp ../Generic/.zshrc ~/.zshrc
 echo -e "Configuration: \e[32mSuccess\e[39m"
 
 #update
-pacman -Syu
+sudo pacman -Syu
 #yaourt
 sudo echo "[archlinuxfr]\nSigLevel = Never\nServer = http://repo.archlinux.fr/$arch" >> /etc/pacman.conf
 sudo pacman -Sy yaourt
@@ -21,6 +21,7 @@ echo ""
 echo -e "\e[96mInstalling essential generic Programs\e[39m"
 while read F  ; do
         sudo pacman -S $F
+        read
 done <../Generic/essential_programs
 echo -e "Program Installation: \e[32mSuccess\e[39m"
 
