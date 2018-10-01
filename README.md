@@ -3,7 +3,7 @@
 ## thanks to...
 - https://github.com/amix/vimrc for the awesome vim config files
 
-Standard configuration files for easier Linux setup.
+Standard configuration files for easier Linux setup. Main target is Arch.
 
 Currently supporting:
 
